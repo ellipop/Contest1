@@ -296,7 +296,7 @@ function spawnPlatformForStage2(){
   if (frameCount % 60 === 0){
     platform = createSprite(200,10,350,60);
     platform.setCollider("rectangle", -60,-40,1000,70);
-    platform.debug = true;
+    platform.debug = false;
     platform.scale = 0.2;
     platform.addImage(lightsImg);
     platform.x = Math.round(random(0,550));
@@ -305,7 +305,7 @@ function spawnPlatformForStage2(){
     plat2 = createSprite(220,10,355,70);
     plat2.addImage(ornamentsImg);
     plat2.setCollider("rectangle", 0, 30,1000,60);
-    plat2.debug = true;
+    plat2.debug = false;
     plat2.scale = 0.2;
     plat2.x = platform.x -5;
     plat2.y = platform.y +10;
